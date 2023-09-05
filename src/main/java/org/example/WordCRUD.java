@@ -29,11 +29,12 @@ public class WordCRUD implements ICRUD{
         System.out.println("--------------------------------");
         for(int i=0; i<list.size(); i++){
             String word = list.get(i).getWord();
-            if(!word.contains(keyword)) continue;
-            System.out.print((j+1) + " ");
-            System.out.println(list.get(i).toString());
-            idlist.add(i);
-            j++;
+            if(word.contains(keyword)) {
+                System.out.print((j + 1) + " ");
+                System.out.println(list.get(i).toString());
+                idlist.add(i);
+                j++;
+            }
         }
         System.out.println("--------------------------------");
 
@@ -79,6 +80,7 @@ public class WordCRUD implements ICRUD{
         s.nextLine();
         System.out.print("==> 정말로 삭제하시겠습니까?(Y/n)  ");
         String ans = s.next();
+        s.nextLine();
         if(ans.equalsIgnoreCase("y")){
             list.remove((int)idlist.get(id-1));
             System.out.println("단어가 삭제되었습니다. ");
