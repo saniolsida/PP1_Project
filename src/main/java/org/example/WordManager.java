@@ -41,9 +41,9 @@ public class WordManager {
                     case 6: wordCRUD.deleteWord();
                         break;
                     case 7:
-                    case 0:
+                    case 0: state = false;
                     default:
-                        state = false;
+                        System.out.println("올바른 번호를 선택해주세요.");
                         break;
                 }
 
