@@ -42,6 +42,7 @@ public class WordManager {
                         break;
                     case 7:
                     case 0: state = false;
+                            break;
                     default:
                         System.out.println("올바른 번호를 선택해주세요.");
                         break;
