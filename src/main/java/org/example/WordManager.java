@@ -34,7 +34,8 @@ public class WordManager {
                         break;
                     case 2: wordCRUD.levelList();
                         break;
-                    case 3:
+                    case 3: wordCRUD.searchWord();
+                        break;
                     case 4: wordCRUD.add();
                         break;
                     case 5: wordCRUD.updateWord();
