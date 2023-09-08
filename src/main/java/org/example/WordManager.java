@@ -32,7 +32,8 @@ public class WordManager {
                 switch (input){
                     case 1: wordCRUD.listAll();
                         break;
-                    case 2:
+                    case 2: wordCRUD.levelList();
+                        break;
                     case 3:
                     case 4: wordCRUD.add();
                         break;

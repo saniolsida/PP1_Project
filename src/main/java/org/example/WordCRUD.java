@@ -41,6 +41,21 @@ public class WordCRUD implements ICRUD{
         return idlist;
     }
 
+    @Override // search
+    public void listAll(int slevel) {
+        int j = 0;
+        System.out.println("--------------------------------");
+        for(int i=0; i<list.size(); i++){
+            int level = list.get(i).getLevel();
+            if(level == slevel) {
+                System.out.print((j + 1) + " ");
+                System.out.println(list.get(i).toString());
+                j++;
+            }
+        }
+        System.out.println("--------------------------------");
+
+    }
     @Override
     public void add() {
         System.out.print("=> 난이도(1,2,3) & 새 단어 입력: ");
@@ -87,5 +102,10 @@ public class WordCRUD implements ICRUD{
         }
         else
             System.out.println("취소되었습니다. ");
+    }
+
+    public void levelList() {
+        System.out.print("=> level 입력: ");
+        listAll(s.nextInt());
     }
 }
