@@ -47,6 +47,7 @@ public class WordManager {
                     case 6: wordCRUD.deleteWord();
                         break;
                     case 7: wordCRUD.saveFile();
+                        break;
                     case 0: state = false;
                             break;
                     default:

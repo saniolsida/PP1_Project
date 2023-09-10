@@ -1,4 +1,1 @@
 1|apple|사과
-1|name|이름
-2|tautology|항진식
-2|Contradiction|모순 명제
