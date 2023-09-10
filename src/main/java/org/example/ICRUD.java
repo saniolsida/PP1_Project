@@ -7,8 +7,9 @@ public interface ICRUD {
 
     // search
     ArrayList<Integer> listAll(String keyword);
-
-    // search
+    public void FileReader();
+    public void saveFile();
+        // search
     void listAll(int slevel);
 
     public void add();
