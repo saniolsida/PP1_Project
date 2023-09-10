@@ -1,11 +1,15 @@
 package org.example;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.Reader;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class WordManager {
         Scanner s = new Scanner(System.in);
         WordCRUD wordCRUD;
-        WordManager(){ wordCRUD = new WordCRUD(s);}
+        WordManager() throws FileNotFoundException { wordCRUD = new WordCRUD(s);}
         public int selectMenu(){
             System.out.print("""
                     *** 영단어 마스터 ***
@@ -25,7 +29,7 @@ public class WordManager {
 
 
         public void start() {
-
+            wordCRUD.FileReader();
             boolean state = true;
             while(state){
                 int input = selectMenu();

@@ -1,5 +1,9 @@
 package org.example;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -11,7 +15,27 @@ public class WordCRUD implements ICRUD{
         list = new ArrayList<>();
         this.s = s;
     }
-
+    public void FileReader(){
+        try{
+            BufferedReader buf = new BufferedReader(new FileReader("dictionary.txt"));
+            String line = null;
+            int count = 0;
+            while(true){
+                line = buf.readLine();
+                if(line == null) break;
+                String data[] = line.split("\\|");
+                int level = Integer.parseInt(data[0]);
+                String word = data[1];
+                String meaning = data[2];
+                list.add(new Word(0,level,word,meaning));
+                count++;
+            }
+            buf.close();
+            System.out.println("===> " + count + "개 로딩 완료!!!");
+        }catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
     @Override
     public void listAll() {
         System.out.println("--------------------------------");
