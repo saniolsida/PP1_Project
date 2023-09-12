@@ -146,7 +146,7 @@ public class WordCRUD implements ICRUD{
         System.out.print("=> 삭제할 번호 선택: ");
         int id = s.nextInt();
         s.nextLine();
-        System.out.print("==> 정말로 삭제하시겠습니까?(Y/n)  ");
+        System.out.print("==> 정말로 삭제하실래요?(Y/n)  ");
         String ans = s.next();
         s.nextLine();
         if(ans.equalsIgnoreCase("y")){
@@ -158,7 +158,7 @@ public class WordCRUD implements ICRUD{
     }
 
     public void levelList() {
-        System.out.print("=> level 입력: ");
+        System.out.print("=> 레벨(1: 초급, 2:중급 , 3:고급 ) 선택:  ");
         listAll(s.nextInt());
     }
 

@@ -1,1 +1,5 @@
 1|apple|사과
+2|tautology|항등식
+1|electric|전기의, 전기를 생산하는
+1|pole|장대
+2|stroll|거닐다, 산책하다
