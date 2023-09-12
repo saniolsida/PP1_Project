@@ -17,3 +17,9 @@
 
 6번 실행결과
 ![단어 삭제](https://github.com/saniolsida/PP1_Project/assets/129493155/ae256aee-f949-445d-bae2-148cc301c6c5)
+
+프로그램 시작시 파일 로딩 사진
+<img width="182" alt="파일 로드" src="https://github.com/saniolsida/PP1_Project/assets/129493155/ea51ced0-ca0d-4902-9859-0eaae7a08beb">
+
+7번 실행 결과
+<img width="170" alt="7번 실행" src="https://github.com/saniolsida/PP1_Project/assets/129493155/53fe23f7-d8c8-4c20-9742-6b9a4b1de3a0">
